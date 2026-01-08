@@ -49,7 +49,7 @@ class ConsistencyCheckerAgent:
         
         # --- منطق تشخیص تضاد (اجرای گام اول تأییدیه) ---
         # تست می‌کنیم که آیا متن، رنگ لباس ثابت کاراکتر را عوض کرده است؟
-        if "قرمز" در input_text or "قرمزی" در input_text:
+        if "قرمز" in input_text or "قرمزی" in input_text:
             if char_memory.get('outfit') == "زره آبی سنگین":
                 is_conflict = True
         
